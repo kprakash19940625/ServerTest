@@ -8,13 +8,13 @@ public class Main {
 	public void test1() {
 		GenerateRandom test = new GenerateRandom();
 		int output = test.generate();
-		assertGreater(5,output);
+		assertTrue(5<output);
 	}
 	@Test
 	public void test2(){
 		GenerateRandom test = new GenerateRandom();
 		int output = test.generate();
-		assertGreater(5,output);
+		assertTrue(5<output);
 	}
 	/*
 	@Test
