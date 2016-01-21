@@ -8,7 +8,7 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
-     <java classname="./build/TestRunner"/>
+     <java dir="./build" classname="TestRunner" fork="true"/>
     <!--
     <junit printsummary="on">
         <test name="TestRunner"/>
