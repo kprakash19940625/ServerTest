@@ -8,5 +8,8 @@ public class TestRunner {
       System.out.println("Total Test Cases Runned : "+result.getRunCount());
       System.out.println("Total Test Cases Failed : "+result.getFailureCount());
       System.out.println("Total Test Cases Successful : "+(result.getRunCount()-result.getFailureCount()));
+      if (result.getFailureCount()>0) {
+         System.out.println("Failed Cases : \n\t "+result.getFailures());
+      }
    }
 }
