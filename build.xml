@@ -9,11 +9,11 @@
   </target>
   <target name="runJunittest" depends="compile">
     <junit printsummary="on">
-        <test name="TestRunner"/>
-                <classpath>
-                <pathelement location="/usr/local/JUNIT/junit-4.10.jar"/>
-                <pathelement location="."/>
-                </classpath>
+        <test name="./build/TestRunner"/>
+            <classpath>
+              <pathelement location="junit-4.10.jar"/>
+              <pathelement location="."/>
+            </classpath>
     </junit>
-</target>
+  </target>
 </project>
