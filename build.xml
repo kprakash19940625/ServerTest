@@ -9,7 +9,7 @@
   </target>
   <target name="runJunittest" depends="compile">
     <junit printsummary="on">
-        <test name="TestRunner"/>
+        <test name="Main"/>
                 <classpath>
                 <pathelement location="./build"/>
                 </classpath>
