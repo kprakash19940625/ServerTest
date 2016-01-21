@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="execute" name="running java class">
+  <target name="execute">
+    <java classname="TestRunner" classpath="junit-4.10.jar" fork="yes" ></java>
+  </target>
+</project>
