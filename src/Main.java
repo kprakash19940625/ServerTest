@@ -10,6 +10,7 @@ public class Main {
                 int output = test.generate();
                 assertTrue(3 < output);
         }
+        
         @Test
         public void test2(){
                 GenerateRandom test = new GenerateRandom();
