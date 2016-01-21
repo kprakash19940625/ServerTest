@@ -13,6 +13,7 @@
             <classpath>
               <pathelement location="./build/junit-4.10.jar"/>
             </classpath>
+            <formatter type="plain" usefile="false" />
     </junit>
   </target>
 </project>
