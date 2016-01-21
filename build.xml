@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="build" name="running java class using ant">
+  <target name="build" depends="clean">
+    <mkdir dir="build"/>
+    <javac includeantruntime="false" srcdir="src" destdir="build"/>
+  </target>
+  <target name="clean">
+    <delete dir="build"/>
+  </target>
+</project>
