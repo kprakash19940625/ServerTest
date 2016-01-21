@@ -9,7 +9,11 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
-    <java classname = "TestRunner" classpath="${build_dir}"></java>
+    <java classname = "TestRunner" classpath="${build_dir}">
+      <classpath>
+        <pathelement location="build/junit-4.10.jar"/>
+      </classpath>
+    </java>
   </target>
   <!--
   <target name="runJunittest" depends="compile">
