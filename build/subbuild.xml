@@ -3,11 +3,11 @@
   <target name="execute">
     <junit printsummary="on">
         <test name="TestRunner"/>
-            <classpath>
-              <pathelement location="junit-4.10.jar"/>
-            </classpath>
-            <formatter type="plain" usefile="false" />
-    </junit>
+                <classpath>
+                <pathelement location="./junit-4.10.jar"/>
+                <pathelement location="."/>
+                </classpath>
+      </junit>
   </target>
   <target name="run">
     <java classname="TestRunner" classpath="junit-4.10.jar" fork="yes" ></java>
