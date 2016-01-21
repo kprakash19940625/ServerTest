@@ -8,7 +8,7 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
-    <ant antfile="build/build.xml" target="execute" />
+    <ant antfile="./build/build.xml" />
     <!--
     <junit printsummary="yes" showoutput="true">
         <test name="Main"/>
