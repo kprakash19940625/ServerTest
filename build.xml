@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="build" name="running java class using ant">
-  <target name="compile" depends="clean">
-    <mkdir dir="build"/>
+  <target name="compile" depends="">
+    <!--<mkdir dir="build"/>-->
     <javac includeantruntime="false" srcdir="src" destdir="build"/>
   </target>
   <target name="clean">
@@ -11,7 +11,7 @@
     <junit printsummary="on">
         <test name="./build/TestRunner"/>
             <classpath>
-              <pathelement location="junit-4.10.jar"/>
+              <pathelement location="./build/junit-4.10.jar"/>
               <pathelement location="."/>
             </classpath>
     </junit>
