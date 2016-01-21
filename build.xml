@@ -17,7 +17,6 @@
                 <pathelement location="./build"/>
                 </classpath>
       </junit>
-    <!--
      <java dir="./build" jar="junit-4.10.jar" classname="TestRunner" fork="true"/>
     <junit printsummary="on">
         <test name="TestRunner"/>
