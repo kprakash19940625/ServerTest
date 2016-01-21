@@ -10,6 +10,8 @@
       </junit>
   </target>
   <target name="run">
+    <property environment="env" />
+    <echo>${env.CWD}</echo>
     <java classname="TestRunner" classpath="." fork="yes" ></java>
   </target>
 </project>
