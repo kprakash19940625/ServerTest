@@ -14,7 +14,6 @@ public class Main {
         public void test2(){
                 GenerateRandom test = new GenerateRandom();
                 int output = test.generate();
-                System.out.println(output);
                 assertTrue(3 < output);
         }
 }
