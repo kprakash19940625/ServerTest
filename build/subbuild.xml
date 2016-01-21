@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="execute" name="running java class">
+<project default="run" name="running java class">
   <target name="execute">
     <junit printsummary="on">
         <test name="TestRunner"/>
