@@ -8,7 +8,8 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
-    <ant antfile="./build/build.xml" />
+    <ant antfile="build/build.xml" inheritrefs="false"/>
+  </target>
     <!--
     <junit printsummary="yes" showoutput="true">
         <test name="Main"/>
@@ -25,5 +26,4 @@
             <formatter type="plain" usefile="false" />
     </junit>
     -->
-  </target>
 </project>
