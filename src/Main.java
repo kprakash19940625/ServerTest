@@ -5,17 +5,19 @@ import org.junit.Test;
 public class Main {
 
 	@Test
-	public void test1() {
-		GenerateRandom test = new GenerateRandom();
-		int output = test.generate();
-		assertTrue(5<output);
-	}
-	@Test
-	public void test2(){
-		GenerateRandom test = new GenerateRandom();
-		int output = test.generate();
-		assertTrue(5<output);
-	}
+        public void test1() {
+                GenerateRandom test = new GenerateRandom();
+                int output = test.generate();
+                System.out.println(output);
+                assertTrue(3 < output);
+        }
+        @Test
+        public void test2(){
+                GenerateRandom test = new GenerateRandom();
+                int output = test.generate();
+                System.out.println(output);
+                assertTrue(3 < output);
+        }
 	/*
 	@Test
 	public void test3(){
