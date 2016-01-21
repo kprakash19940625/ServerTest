@@ -11,7 +11,7 @@
     <junit printsummary="on">
         <test name="./build/TestRunner"/>
             <classpath>
-              <pathelement location="./build/junit-4.10.jar"/>
+              <pathelement location="/home/ec2-user/.jenkins/jobs/ServerTest/workspace/build/junit-4.10.jar"/>
               <pathelement location="."/>
             </classpath>
     </junit>
