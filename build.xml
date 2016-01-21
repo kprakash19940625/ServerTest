@@ -8,7 +8,7 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
-    <junit printsummary="on">
+    <junit printsummary="yes" showoutput="true">
         <test name="Main"/>
                 <classpath>
                 <pathelement location="./build"/>
