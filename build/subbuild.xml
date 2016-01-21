@@ -11,6 +11,7 @@
   </target>
   <target name="run">
     <exec executable="sh" outputproperty="my.cwd"><arg line="-c pwd"/></exec>
-    <java classname="TestRunner" classpath="." fork="yes" ></java>
+    <echo>${user.dir}</echo>
+    <!--<java classname="TestRunner" classpath="." fork="yes" ></java>-->
   </target>
 </project>
