@@ -8,6 +8,8 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
+     <java classname="./build/TestRunner"/>
+    <!--
     <junit printsummary="on">
         <test name="TestRunner"/>
             <classpath>
@@ -15,5 +17,6 @@
             </classpath>
             <formatter type="plain" usefile="false" />
     </junit>
+    -->
   </target>
 </project>
