@@ -9,9 +9,9 @@
   </target>
   <target name="runJunittest" depends="compile">
     <junit printsummary="on">
-        <test name="build.TestRunner"/>
+        <test name="TestRunner"/>
                 <classpath>
-                <pathelement location="build/junit-4.10.jar"/>
+                <pathelement location="junit-4.10.jar"/>
                 <pathelement location="."/>
                 </classpath>
       </junit>
