@@ -8,7 +8,7 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
-    <ant antfile="build/build.xml" inheritrefs="false"/>
+    <ant antfile="build/subbuild.xml" inheritrefs="false"/>
   </target>
     <!--
     <junit printsummary="yes" showoutput="true">
