@@ -8,8 +8,7 @@
     <delete dir="build"/>
   </target>
   <target name="runJunittest" depends="compile">
-    <java classname="build/TestRunner" classpath="build/junit-4.10.jar" fork="yes" >
-    </java>
+    <ant antfile="build/build.xml" target="execute" />
     <!--
     <junit printsummary="yes" showoutput="true">
         <test name="Main"/>
