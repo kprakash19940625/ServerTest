@@ -11,8 +11,7 @@
     <junit printsummary="on">
         <test name="./build/TestRunner"/>
             <classpath>
-              <pathelement location="junit-4.10.jar"/>
-              <pathelement location="."/>
+              <pathelement location="./build/junit-4.10.jar"/>
             </classpath>
     </junit>
   </target>
