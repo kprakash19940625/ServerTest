@@ -10,6 +10,6 @@
       </junit>
   </target>
   <target name="run">
-    <java classname="TestRunner" classpath="junit-4.10.jar" fork="yes" ></java>
+    <java classname="TestRunner" classpath="." fork="yes" ></java>
   </target>
 </project>
