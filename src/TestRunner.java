@@ -15,7 +15,7 @@ public class TestRunner {
          System.out.println("Failed Cases : \n\t "+result.getFailures());
       }
       if (failed>=3) {
-        throw new IllegalArgumentException("INVALID");
+        throw new IllegalArgumentException("Build Failed");
       }
    }
 }
