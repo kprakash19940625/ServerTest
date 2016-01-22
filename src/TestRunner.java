@@ -4,7 +4,7 @@ import org.junit.runner.notification.Failure;
 import java.util.EmptyStackException;
 import java.io.*;
 
-public class TestRunner {
+public class TestRunner throw FileNotFoundException {
    public static void main(String[] args) {
       Result result = JUnitCore.runClasses(Main.class);
       int total = result.getRunCount();
