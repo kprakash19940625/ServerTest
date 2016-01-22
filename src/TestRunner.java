@@ -1,6 +1,7 @@
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+import java.io.IOException;
 
 public class TestRunner {
    public static void main(String[] args) {
@@ -15,7 +16,8 @@ public class TestRunner {
          System.out.println("Failed Cases : \n\t "+result.getFailures());
       }
       if (failed>=3) {
-        throw new IllegalArgumentException("Build Failed");
+        //throw new IllegalArgumentException("Build Failed");
+        throw new IOException("Some required files are missing");
       }
    }
 }
