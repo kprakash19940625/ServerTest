@@ -15,7 +15,7 @@ public class TestRunner {
       if (failed>0) {
          System.out.println("Failed Cases : \n\t "+result.getFailures());
       }
-      if (failed>=2) {
+      if (failed>2) {
         throw new EmptyStackException();
       }
    }
