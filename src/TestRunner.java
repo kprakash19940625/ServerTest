@@ -5,11 +5,17 @@ import org.junit.runner.notification.Failure;
 public class TestRunner {
    public static void main(String[] args) {
       Result result = JUnitCore.runClasses(Main.class);
-      System.out.println("Total Test Cases Runned : "+result.getRunCount());
-      System.out.println("Total Test Cases Failed : "+result.getFailureCount());
-      System.out.println("Total Test Cases Successful : "+(result.getRunCount()-result.getFailureCount()));
-      if (result.getFailureCount()>0) {
+      int total = result.getRunCount();
+      int failed = result.getFailureCount();
+      int succeeded = total - failed;
+      System.out.println("Total Test Cases Runned : "+total);
+      System.out.println("Total Test Cases Failed : "+failed);
+      System.out.println("Total Test Cases Successful : "+succeeded);
+      if (failed>0) {
          System.out.println("Failed Cases : \n\t "+result.getFailures());
+      }
+      if (failed>=3) {
+        throw new EmptyStackException();
       }
    }
 }
