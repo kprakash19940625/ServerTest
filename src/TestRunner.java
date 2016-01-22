@@ -1,9 +1,9 @@
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
-import java.io.IOException;
+import java.util.EmptyStackException;
 
-public class TestRunner extends IOException {
+public class TestRunner {
    public static void main(String[] args) {
       Result result = JUnitCore.runClasses(Main.class);
       int total = result.getRunCount();
@@ -16,8 +16,7 @@ public class TestRunner extends IOException {
          System.out.println("Failed Cases : \n\t "+result.getFailures());
       }
       if (failed>=3) {
-        //throw new IllegalArgumentException("Build Failed");
-        throw new IOException("Some required files are missing");
+        throw new EmptyStackException();
       }
    }
 }
